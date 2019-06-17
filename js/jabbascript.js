@@ -7,3 +7,4 @@ tim = tim.toLocaleDateString();
 
 // Output
 console.log(tim);
+document.body.innerHTML += tim;
