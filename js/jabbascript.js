@@ -1,3 +1,8 @@
+function backgroundChange() {
+   document.body.style.background = 'pink';
+}
+
+
 console.log("Hello World");
 
 let tim = new Date();
