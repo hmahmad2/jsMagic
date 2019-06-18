@@ -1,5 +1,6 @@
 function backgroundChange() {
    document.body.style.background = 'pink';
+   document.getElementById('secondHeader').innerHTML = "Interesting things...";
 }
 
 
@@ -12,4 +13,4 @@ tim = tim.toLocaleDateString();
 
 // Output
 console.log(tim);
-document.body.innerHTML += tim;
+// document.body.innerHTML += tim;
