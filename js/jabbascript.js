@@ -15,11 +15,15 @@ function valueExtraction() {
    var calcTest = document.getElementById("testValue").value;
    console.log(calcTest);
 }
-// document.getElementById("testButton").onclick = function() {
-//    valueExtraction();
-// };
+document.getElementById("testButton").onclick = function() {
+   valueExtraction()
+};
 
-/* So I don't yet get why this commented code up here doesn't work properly, but setting the code to activate on the HTML side worked fine so... ??? This solution is not good for data abstraction, I need to work on getting the commented code to work */
+/**I now know what this code right above me was not working:
+ * I had placed my script tag with my JS source before anything else in the HTML loaded
+ * 
+ * In essense, what the js was looking for was not loaded in yet. So THAT'S why I have to call the script tag last. Huh. Well, lesson learned.
+ */
 
 
 
