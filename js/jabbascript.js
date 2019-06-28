@@ -12,7 +12,7 @@ tim = tim.toLocaleDateString();
 
 // testing how value extraction works
 function valueExtraction() {
-   var calcTest = document.getElementById("testValue").value;
+   var calcTest = Number(document.getElementById("testValue").value);
    console.log(calcTest);
 }
 document.getElementById("testButton").onclick = function() {
