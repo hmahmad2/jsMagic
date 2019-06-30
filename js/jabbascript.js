@@ -10,13 +10,22 @@ let tim = new Date();
 // tim = tim.toDateString();
 tim = tim.toLocaleDateString();
 
-// testing how value extraction works
-function valueExtraction() {
-   var calcTest = Number(document.getElementById("testValue").value);
-   console.log(calcTest);
+// let's do some basic arithmatic as a warm-up
+let retValue;
+function valueExtraction(steve) {
+   steve = Number(document.getElementById("testValue").value);
+   console.log(steve);
 }
+
+// function strangeMath(x) {
+//    var num = valueExtraction(x);
+//    num += 5;
+//    num *= 8;
+//    console.log(num);
+// }
+
 document.getElementById("testButton").onclick = function() {
-   valueExtraction()
+   valueExtraction(retValue)
 };
 
 /**I now know what this code right above me was not working:
