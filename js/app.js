@@ -12,20 +12,23 @@ tim = tim.toLocaleDateString();
 
 // let's do some basic arithmatic as a warm-up
 let retValue;
-function valueExtraction(steve) {
-   steve = Number(document.getElementById("testValue").value);
-   console.log(steve);
+function valueExtraction(numVal) {
+   numVal = Number(document.getElementById("testValue").value);
+   console.log(numVal);
+   return numVal;
 }
 
-// function strangeMath(x) {
-//    var num = valueExtraction(x);
-//    num += 5;
-//    num *= 8;
-//    console.log(num);
-// }
+function strangeMath(x) {
+   var basicArith = valueExtraction(x);
+   basicArith += 5;
+   basicArith *= 8;
+   console.log(basicArith);
+   return basicArith;
+}
 
 document.getElementById("testButton").onclick = function() {
-   valueExtraction(retValue)
+   // valueExtraction(retValue)
+   strangeMath(retValue)
 };
 
 /**I now know what this code right above me was not working:
