@@ -18,17 +18,18 @@ function valueExtraction(numVal) {
    return numVal;
 }
 
-function strangeMath(x) {
+function standardTip(x) {
    var basicArith = valueExtraction(x);
-   basicArith += 5;
-   basicArith *= 8;
+   // basicArith += 5;
+   // basicArith *= 8;
+   basicArith *= 1.15;
    console.log(basicArith);
    return basicArith;
 }
 
 document.getElementById("testButton").onclick = function() {
    // valueExtraction(retValue)
-   strangeMath(retValue)
+   standardTip(retValue)
 };
 
 /**I now know what this code right above me was not working:
