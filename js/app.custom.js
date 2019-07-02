@@ -14,7 +14,7 @@ tim = tim.toLocaleDateString();
 let retValue;
 function valueExtraction(numVal) {
    numVal = Number(document.getElementById("testValue").value);
-   console.log(numVal);
+   console.log("Value retrieved from user is $" + numVal);
    return numVal;
 }
 
@@ -23,7 +23,7 @@ function standardTip(x) {
    // basicArith += 5;
    // basicArith *= 8;
    basicArith *= 1.15;
-   console.log(basicArith);
+   console.log("Calculated total payment, including tax, to be $" + basicArith);
    return basicArith;
 }
 
