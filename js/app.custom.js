@@ -24,6 +24,7 @@ function standardTip(x) {
    // basicArith *= 8;
    basicArith *= 1.15;
    console.log("Calculated total payment, including tax, to be $" + basicArith);
+   document.getElementById("tipDisplay").innerHTML = "New value";
    return basicArith;
 }
 
