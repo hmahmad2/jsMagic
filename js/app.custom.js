@@ -18,16 +18,26 @@ function valueExtraction(numVal) {
    return numVal;
 }
 
-function standardTip(x) {
-   var basicArith = valueExtraction(x);
-   // basicArith += 5;
-   // basicArith *= 8;
-   basicArith *= 0.15;
-   basicArith = basicArith.toFixed(2);
-   console.log("Calculated tip is $" + basicArith);
-   document.getElementById("tipDisplay").innerHTML = `$${basicArith} is how much tip you owe.`;
-   return basicArith;
+function standardTip(saleTotal) {
+   var noTip = valueExtraction(saleTotal);
+   // tipCalc += 5;
+   // tipCalc *= 8;
+   var tipCalc = Number(noTip * 0.15);
+   // console.log(typeof(tipCalc));
+   tipCalc = Number(tipCalc.toFixed(2));
+   var totalPayment = tipCalc + Number(noTip.toFixed(2));
+   
+   console.log("Calculated tip is $" + tipCalc);
+   console.log("Calculated total is $" + totalPayment);
+   document.getElementById("tipDisplay").innerHTML = `$${tipCalc} is how much tip you owe.`;
+   // document.getElementById("tipDisplay").innerHTML += "\n";
+   document.getElementById("totalDisplay").innerHTML += `$${totalPayment} is how much you owe in total.`;
+   return tipCalc;
 }
+
+// function totalPayment(tipVal) {
+   
+// }
 
 document.getElementById("testButton").onclick = function() {
    // valueExtraction(retValue)
