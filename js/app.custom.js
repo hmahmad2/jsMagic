@@ -32,7 +32,7 @@ function standardTip(saleTotal) {
    document.getElementById("tipDisplay").innerHTML = `$${tipCalc} is how much tip you owe.`;
    // document.getElementById("tipDisplay").innerHTML += "\n";
    document.getElementById("totalDisplay").innerHTML += `$${totalPayment} is how much you owe in total.`;
-   return tipCalc;
+   return totalPayment;
 }
 
 // function totalPayment(tipVal) {
